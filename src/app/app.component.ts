@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormControl, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularForm';
+  onSubmit(ftmp: NgForm){
+    console.log(ftmp.value);
+
+  }
+  getValue(f: any){
+    console.log(f);
+
+  }
 }
